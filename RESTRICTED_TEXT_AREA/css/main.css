@@ -1,0 +1,45 @@
+.textarea-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.center {
+  padding: 70px 0;
+  text-align: center;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+#textArea {
+    width: 300px;
+    height: 150px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 12px;
+    outline: none;
+    resize: none;
+    background-color: #f0f8ff;
+    color: #000;              
+}
+
+#textArea:focus {
+    border-color: dodgerblue;
+}
+
+#charCount {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    font-size: 0.8em;
+    color: gray;
+    pointer-events: none;
+}
+
+#textArea.limit-reached {
+    border-color: red;
+    background-color: #ebbfbc;
+}
