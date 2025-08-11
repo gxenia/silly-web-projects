@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tabs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body class="center">
+    <div class="flex-container">
+        <span class="tab active" id="tabTitle0">First Tab</span>
+        <span class="tab" id="tabTitle1">Second Tab</span>
+        <span class="tab" id="tabTitle2">Third Tab</span>
+        <span class="tab" id="tabTitle3">Fourth Tab</span>
+    </div>
+
+    <div class="container-content" id="tab0">
+        <h3>This is the <span style="color: #d31e6d">first</span> tab!</h3>
+        <p>Here you'll read a beautiful sonnet by William Shakespeare</p>
+        <pre class="poetry" id="sonnet18"></pre>
+    </div>
+
+    <div class="container-content hidden" id="tab1">
+        <h3>This is the <span style="color: #1f59b7">second</span> tab!</h3>
+        <p>Here you'll need to guess the artist who made this "partially hidden" masterpiece!</p>
+    </div>
+
+    <div class="container-content hidden" id="tab2">
+        <h3>This is the <span style="color: #19a36c">third</span> tab!</h3>
+        <p>Here you'll listen to a piece by Chopin</p>
+    </div>
+
+    <div class="container-content hidden" id="tab3">
+        <h3>This is the <span style="color: #69566b">last</span> tab &#128532;</h3>
+        <p>What was your favourite tab?</p>
+    </div>
+</body>
+</html>
