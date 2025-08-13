@@ -1,4 +1,9 @@
 const initApp = () => {
+    addClickEvent();
+    loadFile("files/sonnet18.txt", "sonnet18");
+}
+
+const addClickEvent = () => {
     let activeTab = 0;
     document.querySelectorAll(".tab").forEach((tabTitle, i) => {
     tabTitle.addEventListener("click", () => {
@@ -12,6 +17,18 @@ const initApp = () => {
         }        
     });
 });
+}
+
+const loadFile = ( fileName, where ) => {
+    fetch(fileName)
+    .then(response => response.text())
+    .then(data => {
+      const textContainer = document.getElementById(where);
+      if (textContainer) {
+        textContainer.textContent = data;
+      }
+    })
+    .catch(error => console.error('Error loading the file:', error));
 }
 
 document.addEventListener("DOMContentLoaded", initApp);

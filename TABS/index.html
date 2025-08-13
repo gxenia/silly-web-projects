@@ -24,17 +24,30 @@
 
     <div class="container-content hidden" id="tab1">
         <h3>This is the <span style="color: #1f59b7">second</span> tab!</h3>
-        <p>Here you'll need to guess the artist who made this "partially hidden" masterpiece!</p>
+        <p>Here you can admire the "Starry Night" by Vincet Van Gogh</p>
+        <img src="files/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="masterpiece" style="height:600px;">
     </div>
 
     <div class="container-content hidden" id="tab2">
         <h3>This is the <span style="color: #19a36c">third</span> tab!</h3>
         <p>Here you'll listen to a piece by Chopin</p>
+        <h4>Nocturne op.9 No.2</h4>
+        <audio controls>
+            <source src="files/Chopin - Nocturne op.9 No.2.mp3">
+        </audio>
     </div>
 
     <div class="container-content hidden" id="tab3">
         <h3>This is the <span style="color: #69566b">last</span> tab &#128532;</h3>
         <p>What was your favourite tab?</p>
+        <form>
+        <input type="radio" id="first" name="fav_tab" value="1">
+        <label for="first">The first one, I love potry &#128195;</label><br>
+        <input type="radio" id="second" name="fav_tab" value="2">
+        <label for="second">The second one, I love art🎨</label><br>
+        <input type="radio" id="third" name="fav_tab" value="3">
+        <label for="third">Music is my type of thing - I liked the third one &#x1F3B6;</label>
+        </form> 
     </div>
 </body>
 </html>
