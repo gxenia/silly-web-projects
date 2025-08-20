@@ -5,11 +5,16 @@ const showCookieConsent = () => {
         cookieConsentBanner.innerHTML = `
         <img src="img/cookie.png" alt="cookie-banner" style="height:100px;">
         <p>We use cookies to improve your user experience.</p>
-        <button id="accept-cookies">I like Cookies</button>`;
+        <button id="accept-cookies">I like Cookies</button>
+        <button id="close-popup">&times;</button>`;
         document.body.appendChild(cookieConsentBanner);
 
         cookieConsentBanner.querySelector('#accept-cookies').addEventListener("click", (event) => {
         localStorage.setItem("cookiesAccepted", "true");
+        cookieConsentBanner.remove();
+    })
+
+        cookieConsentBanner.querySelector('#close-popup').addEventListener("click", (event) => {
         cookieConsentBanner.remove();
     })
     }
