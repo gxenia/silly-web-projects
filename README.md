@@ -3,3 +3,4 @@ In this repository you'll find some simple web projects taken from [https://road
 - [`Restricted text area`](https://roadmap.sh/projects/restricted-textarea): here the task was to create a textarea with a live character count and a max character limit, no use of css for automatically handling the max character limit.
 - [`Accordion`](https://roadmap.sh/projects/accordion): do you know FAQs? Well apparently a FAQ is also called an *accordion*... In this project I had to make a little accordion component which displayed a list of questions and headings.
 - [`Tabs`](https://roadmap.sh/projects/simple-tabs): as the name suggests, I had to create a simple page with some tabs, one shown by default. When the user clicks on another tab, the content of the current tab is hidden, and the content of the selected tab is displayed.
+- [`Cookie Consent`](https://roadmap.sh/projects/cookie-consent): I had to create a cookie popup
